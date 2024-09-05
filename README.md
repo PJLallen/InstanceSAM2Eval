@@ -55,10 +55,13 @@ python scripts/amg.py --checkpoint <path/to/checkpoint> --model-type <model_type
 - then,selecting the most suitable foreground mask, use a maximum Intersection over Union (IoU)
 ```shell
 cd DIS/script
-python3 test_metrics.py 
+python3 findMaxIoUMask.py 
 ```
-
 - bounding box prompt mode:
+```shell
+cd DIS/SAM
+python3 test_with_box_prompt_floder.py 
+```
 
 - To Evaluate the predicted results.
 ```shell
