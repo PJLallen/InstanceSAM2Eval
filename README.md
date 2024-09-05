@@ -28,6 +28,9 @@ CIS：
 SID：
 SOBA dataset can be downloaded from [here](https://github.com/stevewongv/SSIS)
 
+DIS：
+DIS5K dataset can be downloaded from [here](https://github.com/xuebinqin/DIS)
+
 ### Evaluation
 SIS/CIS/SID:
 1. Download the weights of SAM and SAM2 from the website
