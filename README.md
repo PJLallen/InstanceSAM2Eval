@@ -48,7 +48,7 @@ $ bash run_auto_saliency.sh
 
 DIS:
 
-1.To Get the predicted results of SAM.
+1. To Get the predicted results of SAM.
 - automatic prompts mode:
   
 following the [[`SAM`](https://github.com/facebookresearch/segment-anything)], masks can be generated for images from the command line:
