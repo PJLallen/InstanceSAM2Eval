@@ -44,7 +44,14 @@ modify the dataset root in **SAM/notebooks/[run_auto_saliency.sh](https://github
 # SIS task / SAM / auto model
 $ cd notebooks/
 $ bash run_auto_saliency.sh
-``` 
+```
+
+DIS:
+- To Evaluate the predicted results.
+```shell
+cd metrics
+python3 test_metrics.py 
+python3 hce_metric_main.py
 
 ## Qualitative Results of SIS, CIS and SID task
 1. SAM2 [sam2_demo](https://drive.google.com/file/d/19fAYi0cr6V99T-LNU29itRwqUaQukvcB/view?usp=sharing)
