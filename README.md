@@ -47,6 +47,7 @@ $ bash run_auto_saliency.sh
 ```
 
 DIS:
+
 1.To Get the predicted results of SAM.
 - automatic prompts mode:
   
