@@ -49,11 +49,11 @@ $ bash run_auto_saliency.sh
 DIS:
 - automatic prompts mode:
   
-following the [[`SAM`](https://github.com/facebookresearch/segment-anything)]. masks can be generated for images from the command line:
+following the [[`SAM`](https://github.com/facebookresearch/segment-anything)], masks can be generated for images from the command line:
 ```shell
 python scripts/amg.py --checkpoint <path/to/checkpoint> --model-type <model_type> --input <image_or_folder> --output <path/to/output>
 ```
-then,selecting the most suitable foreground mask, use a maximum Intersection over Union (IoU)
+then, selecting the most suitable foreground mask, use a maximum Intersection over Union (IoU)
 ```shell
 cd DIS/script
 python3 findMaxIoUMask.py 
