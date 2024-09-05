@@ -52,15 +52,15 @@ following the [[`SAM`](https://github.com/facebookresearch/segment-anything)]. m
 ```shell
 python scripts/amg.py --checkpoint <path/to/checkpoint> --model-type <model_type> --input <image_or_folder> --output <path/to/output>
 ```
-then,selecting the most suitable foreground mask, use a maximum Intersection over Union (IoU)
+- then,selecting the most suitable foreground mask, use a maximum Intersection over Union (IoU)
 ```shell
 cd DIS/script
 python3 test_metrics.py 
 ```
 
--bounding box prompt mode:
+- bounding box prompt mode:
 
-To Evaluate the predicted results.
+- To Evaluate the predicted results.
 ```shell
 cd DIS/metrics
 python3 test_metrics.py 
