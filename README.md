@@ -49,7 +49,7 @@ $ bash run_auto_saliency.sh
 DIS:
 - To Evaluate the predicted results.
 ```shell
-cd metrics
+cd DIS/metrics
 python3 test_metrics.py 
 python3 hce_metric_main.py
 ```
