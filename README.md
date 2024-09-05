@@ -47,6 +47,7 @@ $ bash run_auto_saliency.sh
 ```
 
 DIS:
+1.To Get the predicted results of SAM.
 - automatic prompts mode:
   
 following the [[`SAM`](https://github.com/facebookresearch/segment-anything)], masks can be generated for images from the command line:
@@ -64,7 +65,7 @@ cd DIS/SAM
 python3 test_with_box_prompt_floder.py 
 ```
 
-- To Evaluate the predicted results.
+2. To Evaluate the predicted results.
 ```shell
 cd DIS/metrics
 python3 test_metrics.py 
