@@ -3,6 +3,10 @@ Code repository for the paper titled "[Evaluation Study on SAM 2 for Class-agnos
 
 [[`Paper`](https://arxiv.org/pdf/2409.02567)] 
 
+![SIS/CIS/SID](sample1.png)
+
+![DIS](sample2.png)
+
 
 ## Get Started
 
@@ -37,15 +41,29 @@ Code repository for the paper titled "[Evaluation Study on SAM 2 for Class-agnos
 
 1. Download the weights of SAM and SAM2 from the [website](https://github.com/facebookresearch/segment-anything-2).
 2. Put weights into the **checkpoints/**
-3. Use SIS as example:
--> SAM -> auto model \\
+3. Use .sh files in **notebooks** to evaluate:
 
+-->use SAM， auto model， SIS task as example：\\
 modify the dataset root in **SAM/notebooks/[run_auto_saliency.sh](https://github.com/PJLallen/InstanceSAM2Eval/blob/main/SAM/notebooks/run_auto_saliency.sh)**
 
 ```bash
 # SIS task / SAM / auto model
 $ cd notebooks/
 $ bash run_auto_saliency.sh
+```
+Note that, [sam/sam2]_[your mode]_shadow.sh means the SID task. For CIS task, you can change the dataset path and save_json path in [sam/sam2]_[your mode]_cos10k.py or [sam/sam2]_[your mode]_nc4k.py, then
+```shell
+python  [sam/sam2]_[your mode]_cos10k.py
+# or 
+python  [sam/sam2]_[your mode]_nc4k.py
+```
+
+SIS task use he AP70 metric instead of AP75.
+
+After running the [sam/sam2]_[your mode]_saliency.sh, please change the path in [run_AP70.sh](https://github.com/PJLallen/InstanceSAM2Eval/blob/main/SAM/notebooks/run_AP70.sh), then 
+
+```bash
+$ bash run_AP70.sh
 ```
 
 **DIS**:
