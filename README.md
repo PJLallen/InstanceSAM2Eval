@@ -1,5 +1,5 @@
 # Evaluation Study on SAM 2 for Class-agnostic Instance-level Segmentation
-Code repository for our paper titled "Evaluation Study on SAM 2 for Class-agnostic Instance-level Segmentation"
+Code repository for the paper titled "Evaluation Study on SAM 2 for Class-agnostic Instance-level Segmentation"
 
 [[`Paper`](https://arxiv.org/pdf/2409.02567)] 
 
@@ -11,29 +11,31 @@ Code repository for our paper titled "Evaluation Study on SAM 2 for Class-agnost
 2. Please follow the [[`SAM`](https://github.com/facebookresearch/segment-anything)] and [[`SAM2`](https://github.com/facebookresearch/segment-anything-2)] to install the enveriment. 
 3. copy the code in SAM/notebooks into segment-anything/notebooks. Copy the code in SAM2/notebooks into segment-anythings/notebooks
 
-### Dataset
+### Datasets
 
-SIS：
+**SIS**：
 - **ILSO1K**: [Google Drive](https://drive.google.com/file/d/1mpGHOQtUHmZGEMC6KdC8iQYL0-hqzK5g/view?usp=sharing)
 - **SOC**: [Google Drive](https://drive.google.com/file/d/1GYX5HAk3wwOqmgg2jaf6-6VgRzCdMSsL/view?usp=sharing)
 - **SIS10K**[Baidu Disk](https://pan.baidu.com/s/1ZOQAj0Lhg1K4Vi3eS5Tw6w) Verification code: hust
 - **SIP**: [Google Drive](https://drive.google.com/file/d/1ebNjyrS28vEXDGawxHxVFNNxz3XLBqrT/view?usp=drive_link)
 
 
-CIS：
+**CIS**：
 - **COD10K**: [Baidu](https://pan.baidu.com/s/1IPcPjdg1EJ-h9HPoU42nHA) (password:hust) / [Google](https://drive.google.com/file/d/1YGa3v-MiXy-3MMJDkidLXPt0KQwygt-Z/view?usp=sharing) / [Quark](https://pan.quark.cn/s/07ba3258b777); **Json files:** [Baidu](https://pan.baidu.com/s/1kRawj-hzBDycCkZZfQjFhg) (password:hust) / [Google](https://drive.google.com/drive/folders/1Yvz63C8c7LOHFRgm06viUM9XupARRPif?usp=sharing)
 - **NC4K**: [Baidu](https://pan.baidu.com/s/1li4INx4klQ_j8ftODyw2Zg) (password:hust) / [Google](https://drive.google.com/file/d/1eK_oi-N4Rmo6IIxUNbYHBiNWuDDLGr_k/view?usp=sharing); **Json files:** [Baidu](https://pan.baidu.com/s/1DBPFtAL2iEjefwiqXE_GWA) (password:hust) / [Google](https://drive.google.com/drive/folders/1LyK7tl2QVZBFiNaWI_n0ZVa0QiwF2B8e?usp=sharing)
 
 
-SID：
+**SID**：
 - **SOBA** dataset can be downloaded from [https://github.com/stevewongv/SSIS](https://github.com/stevewongv/SSIS)
 
-DIS：
+**DIS**：
 - **DIS5K** dataset can be downloaded from [https://github.com/xuebinqin/DIS](https://github.com/xuebinqin/DIS)
 
-### Evaluation
-SIS/CIS/SID:
-1. Download the weights of SAM and SAM2 from the [website]().
+## Evaluation
+
+**SIS/CIS/SID**:
+
+1. Download the weights of SAM and SAM2 from the [website](https://github.com/facebookresearch/segment-anything-2).
 2. Put weights into the **checkpoints/**
 3. Use SIS as example:
 -> SAM -> auto model \\
@@ -46,7 +48,7 @@ $ cd notebooks/
 $ bash run_auto_saliency.sh
 ```
 
-DIS:
+**DIS**:
 
 1. To Get the predicted results of SAM.
 - automatic prompts mode:
@@ -73,7 +75,7 @@ python3 test_metrics.py
 python3 hce_metric_main.py
 ```
 
-## Qualitative Results of SIS, CIS and SID task
+## Qualitative Results of SIS, CIS and SID
 1. SAM2 [sam2_demo](https://drive.google.com/file/d/19fAYi0cr6V99T-LNU29itRwqUaQukvcB/view?usp=sharing)
 2. SAM [sam_demo](https://drive.google.com/file/d/1sBoaD9JBD5vjPWPEGmUXuzmeV0gzjBTy/view?usp=sharing)
 
