@@ -1,5 +1,5 @@
 # Evaluation Study on SAM 2 for Class-agnostic Instance-level Segmentation
-Code repository for the paper titled "Evaluation Study on SAM 2 for Class-agnostic Instance-level Segmentation"
+Code repository for the paper titled "[Evaluation Study on SAM 2 for Class-agnostic Instance-level Segmentation](https://arxiv.org/pdf/2409.02567)"
 
 [[`Paper`](https://arxiv.org/pdf/2409.02567)] 
 
