@@ -1,4 +1,4 @@
-# InstanceSAM2Eval
+# Evaluation Study on SAM 2 for Class-agnostic Instance-level Segmentation
 Code repository for our paper titled "Evaluation Study on SAM 2 for Class-agnostic Instance-level Segmentation"
 
 [[`Paper`](https://arxiv.org/pdf/2409.02567)] 
@@ -6,7 +6,7 @@ Code repository for our paper titled "Evaluation Study on SAM 2 for Class-agnost
 
 ## Get Started
 
-### install
+### Install
 1. Download the SAM and SAM2 code from the website. [[`SAM`](https://github.com/facebookresearch/segment-anything)] and [[`SAM2`](https://github.com/facebookresearch/segment-anything-2)]
 2. Please follow the [[`SAM`](https://github.com/facebookresearch/segment-anything)] and [[`SAM2`](https://github.com/facebookresearch/segment-anything-2)] to install the enveriment. 
 3. copy the code in SAM/notebooks into segment-anything/notebooks. Copy the code in SAM2/notebooks into segment-anythings/notebooks
@@ -26,16 +26,16 @@ CIS：
 
 
 SID：
-SOBA dataset can be downloaded from [here](https://github.com/stevewongv/SSIS)
+- **SOBA** dataset can be downloaded from [https://github.com/stevewongv/SSIS](https://github.com/stevewongv/SSIS)
 
 DIS：
-DIS5K dataset can be downloaded from [here](https://github.com/xuebinqin/DIS)
+- **DIS5K** dataset can be downloaded from [https://github.com/xuebinqin/DIS](https://github.com/xuebinqin/DIS)
 
 ### Evaluation
 SIS/CIS/SID:
-1. Download the weights of SAM and SAM2 from the website
-2. Put the weight into the **checkpoints/**
-3. Use the SIS as example:
+1. Download the weights of SAM and SAM2 from the [website]().
+2. Put weights into the **checkpoints/**
+3. Use SIS as example:
 -> SAM -> auto model \\
 
 modify the dataset root in **SAM/notebooks/[run_auto_saliency.sh](https://github.com/PJLallen/InstanceSAM2Eval/blob/main/SAM/notebooks/run_auto_saliency.sh)**
@@ -80,17 +80,15 @@ python3 hce_metric_main.py
 ## Citation
 If you find our work useful for your research or applications, please cite using this BibTeX:
 ```bibtex
-@misc{zhang2024evaluationstudysam2,
+@article{zhang2024evalsam2,
       title={Evaluation Study on SAM 2 for Class-agnostic Instance-level Segmentation}, 
-      author={Tiantian Zhang and Zhangjun Zhou and Jialun Pei},
+      author={Zhang, Tiantian and Zhou, Zhangjun and Pei, Jialun},
+      journal={arXiv preprint arXiv:2409.02567},
       year={2024},
-      eprint={2409.02567},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2409.02567}, 
+      url={https://arxiv.org/abs/2409.02567} 
 }
 ```
 
 ## Acknowledgement
 
-Thanks for the efforts of the authors involved in the [Segment Anything](https://github.com/facebookresearch/segment-anything), [Segment Anything 2](https://github.com/facebookresearch/segment-anything-2) and [UnderwaterSAM2Eval](https://github.com/LiamLian0727/UnderwaterSAM2Eval)
+Thanks for the efforts of the authors involved in the [Segment Anything](https://github.com/facebookresearch/segment-anything), [Segment Anything 2](https://github.com/facebookresearch/segment-anything-2) and [UnderwaterSAM2Eval](https://github.com/LiamLian0727/UnderwaterSAM2Eval).
