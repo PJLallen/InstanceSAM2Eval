@@ -100,12 +100,11 @@ python3 hce_metric_main.py
 ## Citation
 If you find our work useful for your research or applications, please cite using this BibTeX:
 ```bibtex
-@article{zhang2024evalsam2,
+@article{pei2024evaluation,
       title={Evaluation Study on SAM 2 for Class-agnostic Instance-level Segmentation}, 
-      author={Zhang, Tiantian and Zhou, Zhangjun and Pei, Jialun},
-      journal={arXiv preprint arXiv:2409.02567},
-      year={2024},
-      url={https://arxiv.org/abs/2409.02567} 
+      author={Pei, Jialun and Zhou, Zhangjun and Zhang, Tiantian},
+      journal={CAAI Artificial Intelligence Research},
+      year={2025}
 }
 ```
 
